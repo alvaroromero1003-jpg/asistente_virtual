@@ -1,0 +1,8 @@
+streamlit
+requests
+python-dotenv
+gspread
+google-auth
+pdfplumber
+pdfminer.six
+openai

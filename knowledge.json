@@ -1,0 +1,97 @@
+{
+  "identidad": {
+    "nombre": "Álvaro Romero",
+    "ubicacion": "Colombia",
+    "rol_objetivo": [
+      "Analytics / BI",
+      "Mejora de Procesos",
+      "Riesgo de Crédito",
+      "Modelos",
+      "Datos"
+    ]
+  },
+  "resumen": "Profesional con 15+ años en datos, mejora de procesos y riesgo de crédito en banca. Integra análisis técnico y visión de negocio para eficiencia y toma de decisiones.",
+  "habilidades_tecnicas": [
+    "SQL",
+    "Power BI",
+    "SAS",
+    "IBM SPSS Modeler",
+    "Excel avanzado",
+    "Python (si aplica)"
+  ],
+  "habilidades_blandas": [
+    "comunicación ejecutiva",
+    "pensamiento crítico",
+    "liderazgo colaborativo",
+    "orientación a resultados",
+    "gestión de proyectos",
+    "planeación estratégica",
+    "innovación",
+    "mejora continua"
+  ],
+  "experiencia_destacada": [
+    {
+      "titulo": "Implementación de VTU (Valor total unificado)",
+      "anio": "2016",
+      "contexto": "Implementación de la CE 023 de 2016 emitida por la SFC",
+      "objetivo": "Articular actores internos y externos, y liderar el proyecto para la implementación de la circular dentro de los tiempos y estándares establecidos",
+      "aporte": [
+        "definición de criterios",
+        "líder de proyecto",
+        "Seguimiento y reporte a directivos",
+        "cumplimiento regulatorio",
+        "Definiciones técnicas"
+      ],
+      "resultado": "Implementado con éxito"
+    },
+    {
+      "titulo": "Squads de eficiencia",
+      "anio": "2023",
+      "contexto": "Identificación de oportunidades de ahorro en el presupuesto de gastos, proponiendo proyectos con las áreas generadoras para lograr la meta de ahorro.",
+      "aporte": [
+        "Construcción y seguimiento de presupuesto",
+        "estandarización KPIs",
+        "ahorros presupuestales",
+        "Proyectos"
+      ],
+      "reconocimiento": "Reconocimiento por resultados en squads",
+      "resultado": "Contribución a la meta lograda de ahorro de CAD 10 MM"
+    }
+  ],
+  "formacion": {
+    "pregrado": "Ingeniería Industrial",
+    "cursos": [
+      "IA",
+      "Python"
+    ]
+  },
+  "logros_cuantitativos": [
+    "Reducción de tiempos en procesos operativos hasta de un 40%",
+    "15 proyectos de automatización cerrados con éxito"
+  ],
+  "preferencias": {
+    "tipo_contrato": "Completar",
+    "modalidad": "Híbrido/Remoto/Presencial",
+    "rango_salarial": "",
+    "ciudades": [
+      "Si aplica"
+    ]
+  },
+  "idiomas": {
+    "espanol": "Nativo",
+    "ingles": "Intermedio - B1 (Estudiando actualmente)"
+  },
+  "links": {
+        "linkedin": "https://www.linkedin.com/in/alvaroromero-eficiencias-proyectos-procesos"
+  },
+  "respuestas_modelo": {
+    "presentacion_corta": "Soy un asistente virtual creado por Álvaro Romero para mostrar su experiencia y formación académica",
+    "motivacion_general": "Álvaro busca aportar su experiencia en diferentes áreas del sector financiero para generar impacto medible",
+    "fortalezas": [
+      "analítica crítica",
+      "optimización de procesos",
+      "storytelling con datos"
+    ],
+    "area_mejora": "Tendencia al detalle; se gestiona con priorización y cadencias ágiles."
+  }
+}
