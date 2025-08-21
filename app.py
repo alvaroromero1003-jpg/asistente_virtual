@@ -55,23 +55,15 @@ def load_cv():
 def get_gsheets_client():
     try:
         SCOPE = ["https://www.googleapis.com/auth/spreadsheets"]
-
-        # Leer credenciales desde Secrets (GitHub/Streamlit Cloud)
-        google_creds_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
-        if not google_creds_json:
-            st.error("⚠️ No se encontró GOOGLE_CREDENTIALS_JSON en los secrets")
-            return None
-
-        # Convertir el texto JSON en diccionario
-        creds_dict = json.loads(google_creds_json)
-
-        # Crear credenciales de Google
-        creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPE)
+        
+        # Cargar el JSON desde los secrets
+        service_account_info = json.loads(os.environ["GOOGLE_CREDENTIALS_JSON"])
+        creds = Credentials.from_service_account_info(service_account_info, scopes=SCOPE)
+        
         client = gspread.authorize(creds)
         return client
-
     except Exception as e:
-        st.error(f"Error conectando con Google Sheets: {e}")
+        print(f"❌ Error conectando con Google Sheets: {e}")
         return None
 
 def log_interaction(user_input, assistant_reply, duration_ms, user_agent):
