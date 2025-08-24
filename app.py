@@ -54,7 +54,10 @@ def load_cv():
 # -----------------------------
 def get_gsheets_client():
     try:
-        SCOPE = ["https://www.googleapis.com/auth/spreadsheets"]
+        SCOPE = [
+            "https://www.googleapis.com/auth/spreadsheets",
+            "https://www.googleapis.com/auth/drive"
+        ]
 
         # Cargar el JSON desde los secrets de Streamlit
         service_account_info = json.loads(st.secrets["GOOGLE_CREDENTIALS_JSON"])
