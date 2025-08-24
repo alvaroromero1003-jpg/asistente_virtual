@@ -82,7 +82,11 @@ def log_interaction(user_input, assistant_reply, duration_ms, user_agent):
             duration_ms,
             user_agent,
         ]
-        sheet.append_row(row)
+        sheet.append_row(
+        row,
+        value_input_option="RAW",
+        insert_data_option="INSERT_ROWS"
+        )
     except Exception as e:
         st.error(f"No se pudo registrar en Google Sheets: {e}")
 
