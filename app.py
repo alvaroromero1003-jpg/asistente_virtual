@@ -82,11 +82,23 @@ def log_interaction(user_input, assistant_reply, duration_ms, user_agent):
             duration_ms,
             user_agent,
         ]
-        sheet.append_row(
-        row,
-        value_input_option="RAW",
-        insert_data_option="INSERT_ROWS"
-        )
+
+        try:
+            # ✅ Intento 1: método clásico
+            sheet.append_row(
+                row, 
+                value_input_option="RAW", 
+                insert_data_option="INSERT_ROWS"
+            )
+        except Exception as e1:
+            print(f"⚠️ append_row falló, probando con batch_update: {e1}")
+
+            # ✅ Intento 2: método moderno y más confiable
+            sheet.batch_update([{
+                "range": f"A{sheet.row_count+1}",
+                "values": [row],
+            }])
+
     except Exception as e:
         st.error(f"No se pudo registrar en Google Sheets: {e}")
 
