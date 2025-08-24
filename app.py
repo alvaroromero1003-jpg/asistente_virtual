@@ -55,15 +55,15 @@ def load_cv():
 def get_gsheets_client():
     try:
         SCOPE = ["https://www.googleapis.com/auth/spreadsheets"]
-        
-        # Cargar el JSON desde los secrets
-        service_account_info = json.loads(os.environ["GOOGLE_CREDENTIALS_JSON"])
+
+        # Cargar el JSON desde los secrets de Streamlit
+        service_account_info = json.loads(st.secrets["GOOGLE_CREDENTIALS_JSON"])
         creds = Credentials.from_service_account_info(service_account_info, scopes=SCOPE)
-        
+
         client = gspread.authorize(creds)
         return client
     except Exception as e:
-        print(f"❌ Error conectando con Google Sheets: {e}")
+        st.error(f"❌ Error conectando con Google Sheets: {e}")
         return None
 
 def log_interaction(user_input, assistant_reply, duration_ms, user_agent):
